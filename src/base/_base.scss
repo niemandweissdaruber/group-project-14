@@ -1,0 +1,32 @@
+body {
+  font-family: Open Sans;
+  font-style: normal;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 84px 31px;
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    padding: 100px 39px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 130px 55px;
+  }
+}
