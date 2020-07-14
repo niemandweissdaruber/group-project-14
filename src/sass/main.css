@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 44px;
+  position: relative;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+@media screen and (max-width: 767px) {
+  .caption {
+    width: 338px;
+    line-height: 1.91;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .caption {
+    margin-left: 80px;
+  }
+}
+
+.caption::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -80px;
+  bottom: 72%;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+@media screen and (min-width: 768px) {
+  .caption::before {
+    bottom: 45%;
+  }
+}
+
+.thumb {
+  height: 360px;
+}
+
+@media screen and (max-width: 767px) {
+  .thumb {
+    width: 418px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .thumb {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .thumb {
+    width: 270px;
+  }
+}
+
+.examples img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .examples img {
+    -o-object-position: left;
+       object-position: left;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .examples img {
+    -o-object-position: left;
+       object-position: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .examples-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.examples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.examples-item {
+  margin: 15px;
+}
+/*# sourceMappingURL=main.css.map */
