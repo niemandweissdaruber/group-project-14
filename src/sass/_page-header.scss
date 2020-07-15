@@ -12,6 +12,7 @@
     screen and (min-resolution: 2dppx) {
     & {
       background: url(/images/header/1-mobile@2x.jpg);
+      background-size: 480px 580px;
     }
   }
   @media screen and (min-device-pixel-ratio: 3),
@@ -19,6 +20,7 @@
     screen and (min-resolution: 3dppx) {
     & {
       background: url(/images/header/1-mobile@3x.jpg);
+      background-size: 480px 580px;
     }
   }
 }
