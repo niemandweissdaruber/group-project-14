@@ -1,0 +1,157 @@
+.image-block-tab {
+  display: none;
+  width: 330px;
+  margin-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.image-block-desk {
+  display: none;
+  margin-right: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.image:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+.section-name {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $primary-black;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+
+    margin-right: 20px;
+    background: $primary-black;
+  }
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+
+  color: $primary-black;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 42px;
+    line-height: 49px;
+  }
+}
+
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.62;
+
+  letter-spacing: 0.02em;
+
+  color: $text-on-white;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+
+  color: $text-on-white;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  border: 1px solid $primary-orange;
+  border-radius: 25px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $primary-black;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $primary-orange;
+    color: $primary-white;
+  }
+}
+
+.about-us {
+  display: flex;
+}
+
+.text-block {
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+  }
+}
