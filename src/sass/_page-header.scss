@@ -2,27 +2,6 @@
   background: rgba(25, 28, 38, 0.2);
   position: relative;
   height: 580px;
-  background: url(/images/header/1-mobile.jpg);
-  background-size: 480px 580px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    & {
-      background: url(/images/header/1-mobile@2x.jpg);
-      background-size: 480px 580px;
-    }
-  }
-  @media screen and (min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
-    & {
-      background: url(/images/header/1-mobile@3x.jpg);
-      background-size: 480px 580px;
-    }
-  }
 }
 .secondary-header {
   margin-top: 130px;
