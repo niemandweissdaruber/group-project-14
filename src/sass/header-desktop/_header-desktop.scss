@@ -5,12 +5,50 @@
     margin-right: 0;
     height: 680px;
     padding: 40px 31px 40px 24px;
+    background: url(/images/header/1-tablet.jpg);
+    background-size: 609px 680px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/images/header/1-tablet@2x.jpg);
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      & {
+        background-image: url(/images/header/1-tablet@3x.jpg);
+      }
+    }
   }
   @media screen and(min-width:1280px) {
     margin-left: 155px;
     padding-left: 40px;
     padding-right: 55px;
+    background: url(/images/header/1-desktop.jpg);
+    background-size: 1125px 680px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(/images/header/1-desktop@2x.jpg);
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      & {
+        background-image: url(/images/header/1-desktop@3x.jpg);
+      }
+    }
   }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .menu-container {
