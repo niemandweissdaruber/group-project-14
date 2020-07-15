@@ -12,14 +12,14 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
-        background-image: url(/images/header/1-tablet@2x.jpg);
+        background: url(/images/header/1-tablet@2x.jpg);
       }
     }
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
       & {
-        background-image: url(/images/header/1-tablet@3x.jpg);
+        background: url(/images/header/1-tablet@3x.jpg);
       }
     }
   }
@@ -34,14 +34,14 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       & {
-        background-image: url(/images/header/1-desktop@2x.jpg);
+        background: url(/images/header/1-desktop@2x.jpg);
       }
     }
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
       & {
-        background-image: url(/images/header/1-desktop@3x.jpg);
+        background: url(/images/header/1-desktop@3x.jpg);
       }
     }
   }
