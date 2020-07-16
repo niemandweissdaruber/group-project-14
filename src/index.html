@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Barbersop</title>
   </head>
   <body>
+    <a class="logo" href="./index.html">
+      <svg class="logo-icon" width="69px" height="56px">
+        <use href="./images/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-
-    <include src="./partials/page-header.html"></include>
-
+    <main>
+      <include src="./partials/our-examples.html"></include>
+      <include src="./partials/page-header.html"></include>
+    </main>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
