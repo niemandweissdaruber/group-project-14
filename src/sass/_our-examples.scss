@@ -1,64 +1,33 @@
-// .our-examples {
-//   padding-top: 84px;
-//   padding-bottom: 84px;
-
-//   @media screen and (min-width: 768px) and (max-width: 1279px) {
-//     padding-top: 100px;
-//     padding-bottom: 101px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     padding-top: 130px;
-//     padding-bottom: 130px;
-//   }
-// }
-
 .caption {
   display: flex;
-  justify-content: left;
-  margin-left: auto;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 44px;
-  position: relative;
-
+  font-family: Open Sans;
+  font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
-
+  line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
 
   @media screen and (max-width: 767px) {
-    width: 338px;
+    width: 358px;
     line-height: 1.91;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-left: 80px;
   }
 
   &::before {
     content: '';
-    display: inline-block;
-    position: absolute;
-    left: -80px;
-    bottom: 72%;
+    display: block;
     width: 60px;
     height: 1px;
-    background-color: #303030;
+    margin-right: 20px;
+    background: #303030;
 
-    @media screen and (min-width: 768px) {
-      bottom: 45%;
+    @media screen and (max-width: 767px) {
+      margin-top: -18px;
     }
-
-    // content: '';
-    // position: absolute;
-    // display: inline-block;
-    // width: 1px;
-    // height: 60px;
-    // color: #303030;
-    // transform: rotate(90deg);;
   }
 }
 
